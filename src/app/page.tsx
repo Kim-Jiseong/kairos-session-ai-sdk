@@ -4,7 +4,7 @@ import { useChat } from "@ai-sdk/react";
 import { useState, useRef, useEffect } from "react";
 
 export default function Chat() {
-  const { messages, input, handleInputChange, handleSubmit } = useChat();
+  const { messages, input, handleInputChange, handleSubmit } = useChat({});
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const [isTyping, setIsTyping] = useState(false);
 
